@@ -24,6 +24,11 @@ export const translations = {
         tag_logic: "Lógica",
         tag_algorithm: "Algoritmo",
         
+        p3_title: "Bot de Inglês",
+        p3_desc: "Aplicação interativa para praticar e aprender inglês de forma automatizada.",
+        tag_bot: "Bot",
+        tag_english: "Inglês",
+        
         ach_title_1: "Minhas ",
         ach_title_2: "Conquistas",
         ach_subtitle: "Reconhecimentos e marcos importantes na minha jornada.",
@@ -64,6 +69,11 @@ export const translations = {
         p2_desc: "A chess engine project implementing movement rules and game logic.",
         tag_logic: "Logic",
         tag_algorithm: "Algorithm",
+        
+        p3_title: "English Bot",
+        p3_desc: "Interactive application to practice and learn English in an automated way.",
+        tag_bot: "Bot",
+        tag_english: "English",
         
         ach_title_1: "My ",
         ach_title_2: "Achievements",
