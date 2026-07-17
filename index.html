@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -22,10 +25,11 @@
         <div class="nav-content">
             <h1 class="logo">M<span>O</span></h1>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#achievements">Conquistas</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" data-i18n="nav_home">Início</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="#achievements" data-i18n="nav_achievements">Conquistas</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+                <li><button id="lang-toggle" class="btn-lang glass" aria-label="Mudar Idioma">EN</button></li>
             </ul>
         </div>
     </nav>
@@ -33,57 +37,57 @@
     <main>
         <section id="home" class="hero section">
             <div class="hero-content fade-in-up">
-                <span class="badge glass">👋 Olá, bem-vindo(a) ao meu espaço</span>
+                <span class="badge glass" data-i18n="hero_badge">👋 Olá, bem-vindo(a) ao meu espaço</span>
                 <h1 class="hero-title">Matheus de Oliveira</h1>
                 <h2 class="hero-subtitle">
-                    <span class="gradient-text">Fullstack</span> Development & Data
+                    <span class="gradient-text">Fullstack</span><span data-i18n="hero_subtitle_2"> Development & Data</span>
                 </h2>
-                <p class="hero-description">
+                <p class="hero-description" data-i18n="hero_description">
                     Transformando dados e códigos em soluções inteligentes, performáticas e inovadoras.
                 </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary glass">Entrar em contato</a>
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary glass" data-i18n="hero_btn_contact">Entrar em contato</a>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="projects section">
             <div class="section-header fade-in-up">
-                <h2>Meus <span class="gradient-text">Projetos</span></h2>
-                <p>Confira algumas das aplicações que desenvolvi.</p>
+                <h2><span data-i18n="projects_title_1">Meus </span><span class="gradient-text" data-i18n="projects_title_2">Projetos</span></h2>
+                <p data-i18n="projects_subtitle">Confira algumas das aplicações que desenvolvi.</p>
             </div>
             
             <div class="projects-grid">
                 <!-- Projeto 1 -->
                 <article class="project-card glass fade-in-up">
                     <div class="project-image">
-                        <img src="images/crud.png" alt="Preview CRUD em Python">
+                        <img src="assets/images/crud.png" alt="Preview CRUD em Python">
                     </div>
                     <div class="project-info">
-                        <h3>CRUD em Python</h3>
-                        <p>Sistema completo de Create, Read, Update e Delete (CRUD) construído com Python.</p>
+                        <h3 data-i18n="p1_title">CRUD em Python</h3>
+                        <p data-i18n="p1_desc">Sistema completo de Create, Read, Update e Delete (CRUD) construído com Python.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Database</span>
                         </div>
-                        <a href="https://c-r-u-d-em-python.vercel.app/accounts/login/?next=%2F" class="btn-link">Acessar Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://c-r-u-d-em-python.vercel.app/accounts/login/?next=%2F" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
                 <!-- Projeto 2 -->
                 <article class="project-card glass fade-in-up" style="animation-delay: 0.2s;">
                     <div class="project-image">
-                        <img src="images/chess.png" alt="Preview Engine de Xadrez">
+                        <img src="assets/images/chess.png" alt="Preview Engine de Xadrez">
                     </div>
                     <div class="project-info">
-                        <h3>Engine de Xadrez</h3>
-                        <p>Projeto de um motor (engine) de xadrez implementando regras de movimentação e lógica do jogo.</p>
+                        <h3 data-i18n="p2_title">Engine de Xadrez</h3>
+                        <p data-i18n="p2_desc">Projeto de um motor (engine) de xadrez implementando regras de movimentação e lógica do jogo.</p>
                         <div class="project-tags">
-                            <span class="tag">Lógica</span>
-                            <span class="tag">Algoritmo</span>
+                            <span class="tag" data-i18n="tag_logic">Lógica</span>
+                            <span class="tag" data-i18n="tag_algorithm">Algoritmo</span>
                         </div>
-                        <a href="https://projeto-engine-xadrez.vercel.app/" class="btn-link">Acessar Projeto <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://projeto-engine-xadrez.vercel.app/" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -92,25 +96,25 @@
 
         <section id="achievements" class="projects section">
             <div class="section-header fade-in-up">
-                <h2>Minhas <span class="gradient-text">Conquistas</span></h2>
-                <p>Reconhecimentos e marcos importantes na minha jornada.</p>
+                <h2><span data-i18n="ach_title_1">Minhas </span><span class="gradient-text" data-i18n="ach_title_2">Conquistas</span></h2>
+                <p data-i18n="ach_subtitle">Reconhecimentos e marcos importantes na minha jornada.</p>
             </div>
             
             <div class="projects-grid">
                 <!-- Conquista 1 -->
                 <article class="achievement-card glass fade-in-up">
                     <div class="achievement-image">
-                        <img src="images/intercambio.png" alt="Intercâmbio Cultural FATEC">
+                        <img src="assets/images/intercambio.png" alt="Intercâmbio Cultural FATEC">
                     </div>
                     <div class="achievement-info">
-                        <h3>Vencedor do Desafio de Inovação Global</h3>
-                        <p>Vencedor do "Desafio 24 Horas de Inovação Global" pela FATEC Jundiaí. Como reconhecimento, fui contemplado com a bolsa de intercâmbio cultural, uma experiência incrível que ampliou minha visão de mundo.</p>
+                        <h3 data-i18n="a1_title">Vencedor do Desafio de Inovação Global</h3>
+                        <p data-i18n="a1_desc">Vencedor do "Desafio 24 Horas de Inovação Global" pela FATEC Jundiaí. Como reconhecimento, fui contemplado com a bolsa de intercâmbio cultural, uma experiência incrível que ampliou minha visão de mundo.</p>
                         <div class="project-tags">
-                            <span class="tag">Inovação</span>
+                            <span class="tag" data-i18n="tag_innovation">Inovação</span>
                             <span class="tag">FATEC</span>
-                            <span class="tag">Intercâmbio</span>
+                            <span class="tag" data-i18n="tag_exchange">Intercâmbio</span>
                         </div>
-                        <a href="https://jr.jor.br/2026/04/29/aluno-da-fatec-de-jundiai-vence-desafio-24-horas-de-inovacao-global/" class="btn-link">Ler Notícia no Jornal <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://jr.jor.br/2026/04/29/aluno-da-fatec-de-jundiai-vence-desafio-24-horas-de-inovacao-global/" class="btn-link"><span data-i18n="btn_read_news">Ler Notícia no Jornal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </article>
             </div>
@@ -118,8 +122,8 @@
 
         <section id="contact" class="contact section">
             <div class="contact-card glass fade-in-up">
-                <h2>Vamos <span class="gradient-text">Conversar?</span></h2>
-                <p>Estou aberto a novas oportunidades e conexões.</p>
+                <h2><span data-i18n="contact_title_1">Vamos </span><span class="gradient-text" data-i18n="contact_title_2">Conversar?</span></h2>
+                <p data-i18n="contact_subtitle">Estou aberto a novas oportunidades e conexões.</p>
                 
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/matheus-de-oliveira-b76b3115b/" target="_blank" class="social-btn glass" aria-label="LinkedIn">
@@ -137,9 +141,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Matheus de Oliveira. Todos os direitos reservados.</p>
+        <p data-i18n="footer_text">&copy; 2026 Matheus de Oliveira. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
