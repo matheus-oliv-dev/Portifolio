@@ -1,0 +1,20 @@
+{
+  "project": "Portfólio Vanilla",
+  "active_features": [],
+  "completed_features": [
+    {
+      "id": "HARNESS-01",
+      "behavior": "Implementar Harness Engineering framework no repo",
+      "verification": "Verificação de estrutura de arquivos em init.sh e presença de AGENTS.md e Docs",
+      "state": "passing",
+      "evidence": "Arquivos criados na raiz do projeto (AGENTS.md, progress.md, feature_list.json, init.sh) sem dependências externas."
+    },
+    {
+      "id": "REDESIGN-01",
+      "behavior": "Redesign autoral eliminando clichês de IA (orbs desfocados, botões 50px, cores roxo/rosa genéricas)",
+      "verification": "bash ./init.sh passa e validação visual de CSS com paleta Emerald/Cyan e Tech Grid",
+      "state": "passing",
+      "evidence": "Substituição do fundo genérico por Tech Grid com iluminação radial, nova paleta Emerald & Cyan (#10b981 / #06b6d4), raio de borda estruturado (12px/16px), chip de status com iluminação pulsante e tags estilo terminal."
+    }
+  ]
+}
