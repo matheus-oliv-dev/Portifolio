@@ -4,17 +4,17 @@ Use este arquivo para rastrear o progresso do projeto entre as sessões.
 
 ## Última Sessão
 
-- **Data:** 2026-07-22
+- **Data:** 2026-07-31
 - **Feito:**
-  - Análise da interface para diagnóstico de elementos com visual "gerado por IA".
-  - Implementação de redesign autoral refinado sem dependências externas:
-    - Paleta de cores exclusiva **Emerald & Cyan** (`#10b981` / `#06b6d4`) com fundo escuro tecnológico (`#080c14`).
-    - Substituição dos orbs neon borrados por um fundo de **Tech Grid Pattern** e gradientes radiais suaves.
-    - Reestruturação de `border-radius` (cards em 14px e botões em 10px) para visual sólido e sênior.
-    - Transformação do badge em um chip de status com iluminação pulsante e tags em estilo terminal.
-  - Validação via `bash ./init.sh` aprovada com sucesso.
+  - Implementação do **Tema Dark Cyber Tech** com fundo escuro profundo (`#080c14`), glassmorphism translúcido (`rgba(15, 23, 42, 0.75)`) e acentos luminosos **Emerald (`#10b981`)** e **Cyan (`#06b6d4`)**.
+  - Criação e ativação do módulo Canvas **`js/neural-bg.js`**:
+    - Neurônios e conexões sinápticas em Canvas HTML5 2D nativo rodando na GPU sem dependências externas.
+    - Interatividade completa ao mover o cursor (acendimento de nós com brilho neon, atração magnética e disparo de pulsos elétricos percorrendo as sinapses).
+    - Suporte a telas de alta densidade de pixels (Retina / hiDPI) e toque em dispositivos móveis.
+  - Teste de integridade `bash ./init.sh` **aprovado**.
+  - Servidor HTTP local de desenvolvimento ativo em `http://localhost:8000`.
 - **Bloqueios/Avisos:** Nenhum bloqueio.
 - **Próximos Passos Sugeridos:**
+  - Testar no navegador local e enviar para o GitHub (`git push`).
   - Adicionar novos projetos ou seções de habilidades (skills).
   - Incluir animações de hover nos cards se desejado.
-

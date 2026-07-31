@@ -1,14 +1,15 @@
 /* Keyframes */
 @keyframes float {
     0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(30px, 50px) scale(1.1); }
+    100% { transform: translate(20px, 35px) scale(1.05); }
 }
 
-/* Fade In Up */
+/* Smooth Fade In Up */
 .fade-in-up {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(18px);
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
 }
 
 .fade-in-up.visible {
