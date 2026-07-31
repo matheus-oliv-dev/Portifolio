@@ -15,8 +15,8 @@ export const translations = {
         projects_title_2: "Projetos",
         projects_subtitle: "Confira algumas das aplicações que desenvolvi.",
         
-        p1_title: "CRUD em Python",
-        p1_desc: "Sistema completo de Create, Read, Update e Delete (CRUD) construído com Python.",
+        p1_title: "TechSales",
+        p1_desc: "Aplicação comercial em Django com analytics via ORM, exportação CSV, i18n (PT-BR/EN-US), UI Glassmorphism e arquitetura Serverless.",
         btn_access_project: "Acessar Projeto",
         
         p2_title: "Engine de Xadrez",
@@ -24,7 +24,7 @@ export const translations = {
         tag_logic: "Lógica",
         tag_algorithm: "Algoritmo",
         
-        p3_title: "Bot de Inglês",
+        p3_title: "Teacher Sarah",
         p3_desc: "Aplicação interativa para praticar e aprender inglês de forma automatizada.",
         tag_bot: "Bot",
         tag_english: "Inglês",
@@ -61,8 +61,8 @@ export const translations = {
         projects_title_2: "Projects",
         projects_subtitle: "Check out some of the applications I have developed.",
         
-        p1_title: "Python CRUD",
-        p1_desc: "Complete Create, Read, Update and Delete (CRUD) system built with Python.",
+        p1_title: "TechSales",
+        p1_desc: "Commercial Django application with ORM analytics, CSV export, i18n (PT-BR/EN-US), Glassmorphism UI, and Serverless architecture.",
         btn_access_project: "Access Project",
         
         p2_title: "Chess Engine",
@@ -70,7 +70,7 @@ export const translations = {
         tag_logic: "Logic",
         tag_algorithm: "Algorithm",
         
-        p3_title: "English Bot",
+        p3_title: "Teacher Sarah",
         p3_desc: "Interactive application to practice and learn English in an automated way.",
         tag_bot: "Bot",
         tag_english: "English",
