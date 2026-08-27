@@ -15,6 +15,10 @@ export const translations = {
         projects_title_2: "Projetos",
         projects_subtitle: "Confira algumas das aplicações que desenvolvi.",
         
+        p4_title: "Redubla · DevSecOps & Defesa",
+        p4_desc: "Arquitetura de segurança defensiva multicamadas: DAST Fuzzer, SAST Code Sentinel, Row Level Security (RLS) no PostgreSQL, Rate Limiting adaptativo e Zero Trust Audit Trail.",
+        btn_view_security_report: "Ver Relatório de Segurança",
+
         p1_title: "TechSales",
         p1_desc: "Aplicação comercial em Django com analytics via ORM, exportação CSV, i18n (PT-BR/EN-US), UI Glassmorphism e arquitetura Serverless.",
         btn_access_project: "Acessar Projeto",
@@ -61,6 +65,10 @@ export const translations = {
         projects_title_2: "Projects",
         projects_subtitle: "Check out some of the applications I have developed.",
         
+        p4_title: "Redubla · DevSecOps & Defense",
+        p4_desc: "Multi-layered defensive security architecture: DAST Fuzzer, SAST Code Sentinel, Row Level Security (RLS) in PostgreSQL, adaptive Rate Limiting, and Zero Trust Audit Trail.",
+        btn_view_security_report: "View Security Report",
+
         p1_title: "TechSales",
         p1_desc: "Commercial Django application with ORM analytics, CSV export, i18n (PT-BR/EN-US), Glassmorphism UI, and Serverless architecture.",
         btn_access_project: "Access Project",

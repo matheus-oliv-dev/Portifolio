@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Matheus de Oliveira</title>
     <meta name="description" content="Portfólio de Matheus de Oliveira - Fullstack Data & Development">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -12,8 +15,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome for Icons with Subresource Integrity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="background-effects">
@@ -61,8 +64,26 @@
             </div>
             
             <div class="projects-grid">
-                <!-- Projeto 1 -->
+                <!-- Projeto 1: DevSecOps & Defesa -->
                 <article class="project-card glass fade-in-up">
+                    <div class="project-image">
+                        <img src="assets/images/devsecops.jpg" alt="Preview Redubla DevSecOps">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="p4_title">Redubla · DevSecOps & Defesa</h3>
+                        <p data-i18n="p4_desc">Arquitetura de segurança defensiva multicamadas: DAST Fuzzer, SAST Code Sentinel, Row Level Security (RLS) no PostgreSQL, Rate Limiting adaptativo e Zero Trust Audit Trail.</p>
+                        <div class="project-tags">
+                            <span class="tag">DevSecOps</span>
+                            <span class="tag">DAST / SAST</span>
+                            <span class="tag">PostgreSQL RLS</span>
+                            <span class="tag">Zero Trust</span>
+                        </div>
+                        <a href="RELATORIO_SEGURANCA_DEVSECOPS.md" target="_blank" rel="noopener noreferrer" class="btn-link"><span data-i18n="btn_view_security_report">Ver Relatório de Segurança</span> <i class="fa-solid fa-shield-halved"></i></a>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="project-card glass fade-in-up" style="animation-delay: 0.2s;">
                     <div class="project-image">
                         <img src="assets/images/crud.png" alt="Preview CRUD em Python">
                     </div>
@@ -73,12 +94,12 @@
                             <span class="tag">Python</span>
                             <span class="tag">Database</span>
                         </div>
-                        <a href="https://crud.matheusdev.com.br/accounts/login/?next=%2F" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://crud.matheusdev.com.br/accounts/login/?next=%2F" target="_blank" rel="noopener noreferrer" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <!-- Projeto 2 -->
-                <article class="project-card glass fade-in-up" style="animation-delay: 0.2s;">
+                <!-- Projeto 3 -->
+                <article class="project-card glass fade-in-up" style="animation-delay: 0.4s;">
                     <div class="project-image">
                         <img src="assets/images/chess.png" alt="Preview Engine de Xadrez">
                     </div>
@@ -89,12 +110,12 @@
                             <span class="tag" data-i18n="tag_logic">Lógica</span>
                             <span class="tag" data-i18n="tag_algorithm">Algoritmo</span>
                         </div>
-                        <a href="https://xadrez.matheusdev.com.br/" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://xadrez.matheusdev.com.br/" target="_blank" rel="noopener noreferrer" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
-                <!-- Projeto 3 -->
-                <article class="project-card glass fade-in-up" style="animation-delay: 0.4s;">
+                <!-- Projeto 4 -->
+                <article class="project-card glass fade-in-up" style="animation-delay: 0.6s;">
                     <div class="project-image">
                         <img src="assets/images/AIsara.png" alt="Preview Bot Inglês">
                     </div>
@@ -105,7 +126,7 @@
                             <span class="tag" data-i18n="tag_bot">Bot</span>
                             <span class="tag" data-i18n="tag_english">Inglês</span>
                         </div>
-                        <a href="https://bot.matheusdev.com.br/" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://bot.matheusdev.com.br/" target="_blank" rel="noopener noreferrer" class="btn-link"><span data-i18n="btn_access_project">Acessar Projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -132,7 +153,7 @@
                             <span class="tag">FATEC</span>
                             <span class="tag" data-i18n="tag_exchange">Intercâmbio</span>
                         </div>
-                        <a href="https://jr.jor.br/2026/04/29/aluno-da-fatec-de-jundiai-vence-desafio-24-horas-de-inovacao-global/" class="btn-link"><span data-i18n="btn_read_news">Ler Notícia no Jornal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://jr.jor.br/2026/04/29/aluno-da-fatec-de-jundiai-vence-desafio-24-horas-de-inovacao-global/" target="_blank" rel="noopener noreferrer" class="btn-link"><span data-i18n="btn_read_news">Ler Notícia no Jornal</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </article>
             </div>
@@ -144,10 +165,10 @@
                 <p data-i18n="contact_subtitle">Estou aberto a novas oportunidades e conexões.</p>
                 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/matheus-de-oliveira-b76b3115b/" target="_blank" class="social-btn glass" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/matheus-de-oliveira-b76b3115b/" target="_blank" rel="noopener noreferrer" class="social-btn glass" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/matheus-oliv-dev" target="_blank" class="social-btn glass" aria-label="GitHub">
+                    <a href="https://github.com/matheus-oliv-dev" target="_blank" rel="noopener noreferrer" class="social-btn glass" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="mailto:matheus2112oliveira@gmail.com" class="social-btn glass" aria-label="Email">

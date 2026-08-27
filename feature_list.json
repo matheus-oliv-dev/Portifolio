@@ -3,11 +3,6 @@
   "active_features": [],
   "completed_features": [
     {
-{
-  "project": "Portfólio Vanilla",
-  "active_features": [],
-  "completed_features": [
-    {
       "id": "HARNESS-01",
       "behavior": "Implementar Harness Engineering framework no repo",
       "verification": "Verificação de estrutura de arquivos em init.sh e presença de AGENTS.md e Docs",
@@ -27,6 +22,13 @@
       "verification": "bash ./init.sh passa, módulo js/neural-bg.js criado com nós Emerald/Cyan neon, atração gravitacional e pulsos luminosos de sinapse",
       "state": "passing",
       "evidence": "Fundo Dark Cyber profundidade (#080c14), partículas fluindo com velocidade independente, brilho intenso em hover, iluminação de sinapses periféricas e suporte a touch."
+    },
+    {
+      "id": "DEVSECOPS-HARDENING",
+      "behavior": "Implementação de Hardening Frontend, Pipeline DevSecOps no GitHub Actions e Card de Arquitetura Defensiva",
+      "verification": "bash ./init.sh passa, CSP e headers configurados, SRI no FontAwesome, rel=noopener noreferrer nos links e workflow de Gitleaks/Semgrep ativo",
+      "state": "passing",
+      "evidence": "index.html com CSP, Permissions-Policy, Referrer-Policy, FontAwesome com SRI hash, proteção contra reverse tabnabbing, workflow .github/workflows/security.yml criado e card Redubla DevSecOps adicionado com suporte i18n."
     }
   ]
 }
