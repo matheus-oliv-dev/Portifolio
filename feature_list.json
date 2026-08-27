@@ -25,10 +25,10 @@
     },
     {
       "id": "DEVSECOPS-HARDENING",
-      "behavior": "Implementação de Hardening Frontend, Pipeline DevSecOps no GitHub Actions e Card de Arquitetura Defensiva",
+      "behavior": "Implementação de Hardening Frontend e Pipeline DevSecOps no GitHub Actions",
       "verification": "bash ./init.sh passa, CSP e headers configurados, SRI no FontAwesome, rel=noopener noreferrer nos links e workflow de Gitleaks/Semgrep ativo",
       "state": "passing",
-      "evidence": "index.html com CSP, Permissions-Policy, Referrer-Policy, FontAwesome com SRI hash, proteção contra reverse tabnabbing, workflow .github/workflows/security.yml criado e card Redubla DevSecOps adicionado com suporte i18n."
+      "evidence": "index.html com CSP, Permissions-Policy, Referrer-Policy, FontAwesome com SRI hash, proteção contra reverse tabnabbing e workflow .github/workflows/security.yml criado com Gitleaks e Semgrep."
     }
   ]
 }
